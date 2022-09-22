@@ -14,7 +14,10 @@ header ul {
     padding: 9px;
     background-color:lightblue;
     list-style: none;
-    font-weight:bold;
+   
+}
+header li {
+    font-family:impact;
 }
 div {
     text-align: center;

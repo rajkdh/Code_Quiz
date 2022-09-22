@@ -1,4 +1,4 @@
-//GLOBAL VARIABLES
+
 var listEl;
 var buttonEl;
 var timeStart = 75;
@@ -7,7 +7,6 @@ var questionsScore = 0;
 var leaderBoard = [];
 var x = 0;
 
-//DOCUMENT OBJECT MODEL VARIABLES
 var startButton = document.querySelector("#start-quiz");
 var quizContainer = document.querySelector("#quiz-box");
 var quizButton = document.querySelector(".btn");
@@ -16,7 +15,7 @@ var quizHeader = document.querySelector("#quiz-header");
 var quizText = document.querySelector("#quiz-text");
 var highScore = document.querySelector("#high-score");
 
-// FIVE FOUR THREE COUNT DOWN TIMER
+
 var beginQuiz = function() {
     var startTime = setInterval(function(){
         if (timeStart <= -1 || x === 5) {
@@ -76,7 +75,7 @@ var buttonHandler = function(event) {
     }   
 
 }
-//FUNCTION TO END THIS GAME
+
 var endGame = function() {
     score = Math.max(0, timeStart + questionsScore);
     quizHeader.textContent = "Game Over";
@@ -95,7 +94,7 @@ var endGame = function() {
     quizContainer.appendChild(submit);
 }
 
-//FUNCTION FOR SAVING SCORES PLUS USER NAME/INTIALS
+
 var submitInitials = function() {
     var submitInitials = document.querySelector(".text-input").value;
     var submitScore = score;
@@ -118,7 +117,7 @@ var getGame = function() {
         for (var i = 0; i < savedScore.length; i++) {
             var leaderBoards = document.createElement("li");
             leaderBoards.className = "creameOfTheCrop";
-            leaderBoards.textContent = "HighScore!"
+            leaderBoards.textContent = "High Score:"
             highScore.appendChild(leaderBoards);
             var previousGame = document.createElement("li");
             previousGame.className = "prev-game";
@@ -129,7 +128,7 @@ var getGame = function() {
     }
 }
 
-//QUIZ BANK ARRAY
+
 var questions = [
     {
         title: "Which of the following keywords is used to define a variable in Javascript?",
