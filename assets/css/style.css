@@ -1,0 +1,71 @@
+
+* {
+    display:100vs;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 9px;
+    background-color:lightblue;
+    list-style: none;
+    font-weight:bold;
+}
+div {
+    text-align: center;
+    padding: 26px;
+} 
+h3 { 
+    color: olive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.quiz-title, .quiz-info {
+    margin-top: 29px;
+}
+#quiz-box {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+.creameOfTheCrop {
+    font-size: x-large;
+    color: purple;
+    list-style: none;
+}
+.prev-game {
+    list-style: none;
+}
+.btn, .btn-submit {
+    margin: 5px;
+    border: none;
+    font-size: .9rem;
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    width: 100px;
+    height: 26.5px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}    
+ #quiz-box li {
+     font-size: xx-large;
+ }
+.btn-quizbtn:hover, .btn-submit:hover {
+    background-color: green;
+}
+.text-input {
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+}
+.btn:hover {
+    background-color:green;
+}
